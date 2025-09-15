@@ -3,7 +3,7 @@
   import TasksForm from "./lib/tasks-form.svelte"
   import TasksList from "./lib/tasks-list.svelte"
 
-  let msg = "Tasks App"
+  let msg = "Todo App"
   let tasks = $state([]);
   let totalDone = $derived(tasks.reduce((total,task)=> total + Number(task.done),0))
   let currentFilter = $state("all")
